@@ -107,9 +107,9 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 
 /* ---------- Top nav ---------- */
 .topnav { position: sticky; top: 0; z-index: 50; background: var(--black); }
-.topnav .container { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 66px; }
+.topnav .container { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 76px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--white); min-width: 0; }
-.brand img { height: 34.3px; width: auto; }
+.brand img { height: 44.6px; width: auto; }
 .brand .sep { width: 1px; height: 22px; background: rgba(255,255,255,.45); flex: none; }
 .brand .event { font-size: 17px; font-weight: 400; white-space: nowrap; letter-spacing: -.01em; }
 .menu { display: flex; align-items: center; gap: 28px; }
@@ -117,7 +117,7 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 .menu a:not(.btn) { color: rgba(255,255,255,.62); font-size: 16px; font-weight: 600; text-decoration: none; padding: 6px 0; }
 .menu a:not(.btn):hover, .menu a[aria-current="page"] { color: var(--white); }
 @media (max-width: 900px) { .menu a:not(.btn) { display: none; } }
-@media (max-width: 520px) { .brand .event { display: none; } .brand .sep { display: none; } .brand img { height: 28px; } }
+@media (max-width: 520px) { .brand .event { display: none; } .brand .sep { display: none; } .brand img { height: 32px; } }
 
 /* ---------- Hero ---------- */
 .hero { position: relative; color: var(--white); background: var(--black); overflow: hidden; }
@@ -145,7 +145,7 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
 /* Lanyard band */
-.band { display: grid; grid-template-columns: repeat(4, 1fr); height: 6px; }
+.band { display: grid; grid-template-columns: repeat(4, 1fr); height: 12px; }
 .band i:nth-child(1) { background: var(--yellow); } .band i:nth-child(2) { background: var(--orange); }
 .band i:nth-child(3) { background: var(--teal); }   .band i:nth-child(4) { background: var(--green); }
 
