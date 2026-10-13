@@ -372,3 +372,8 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
 .embed-title { font-size: 26px; font-weight: 700; letter-spacing: -.01em; margin: 0 0 18px; }
 .embed-form { min-height: 400px; }
 .embed-form iframe { width: 100%; border: 0; display: block; }
+/* single-column registration with embedded form */
+.reg.reg-single { grid-template-columns: 1fr; }
+.reg-single .embed-form { max-width: 680px; }
+/* the embedded form has ~38px of internal left padding; pull it back so it lines up with the heading */
+.embed-form iframe { margin-left: -38px; width: calc(100% + 38px) !important; margin-top: -40px; }
