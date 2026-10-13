@@ -143,7 +143,8 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 .rule { width: 40px; height: 3px; background: var(--yellow); margin: 24px 0; border: 0; }
 .hero-logo { height: 64px; width: auto; margin-bottom: 28px; }
 .hero-meta { display: flex; flex-wrap: wrap; gap: 8px 28px; margin: 0 0 28px; padding: 0; list-style: none; font-weight: 600; font-size: 15px; }
-.hero-meta li::before { content: ""; display: inline-block; width: 8px; height: 8px; margin-right: 8px; background: var(--c); vertical-align: 1px; }
+.hero-meta li { display: flex; align-items: center; }
+.hero-meta li::before { content: ""; flex: none; width: 18px; height: 18px; margin-right: 6px; background: var(--c); -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z'/%3E%3C/svg%3E") center / contain no-repeat; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
 /* Lanyard band */
@@ -153,10 +154,21 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 
 /* ---------- Themes (joined cards) ---------- */
 .themes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-.theme { background: var(--white); padding: 24px 22px 28px; border-top: 4px solid var(--c); }
-.theme .num { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--grey); margin: 0 0 20px; }
-.theme h3 { font-size: 20px; font-weight: 700; letter-spacing: -.01em; line-height: 1.2; margin-bottom: 10px; }
-.theme p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--grey); }
+.theme { background: var(--white); padding: 22px 22px 20px; border: 0; border-top: 4px solid var(--c); font: inherit; color: inherit; text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 10px; min-height: 168px; transition: background .15s; }
+.theme:hover { background: var(--paper); }
+.theme:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
+.theme .num { display: block; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--grey); margin: 0; }
+.theme-title { display: block; font-size: 20px; font-weight: 700; letter-spacing: -.01em; line-height: 1.2; color: var(--ink); }
+.theme-more { margin-top: auto; font-size: 13px; font-weight: 700; color: var(--link); }
+.theme:hover .theme-more { text-decoration: underline; }
+.focus-modal { width: min(640px, calc(100vw - 32px)); max-height: calc(100vh - 48px); border: 0; border-top: 6px solid var(--c, var(--teal)); padding: 36px 36px 32px; color: var(--ink); background: var(--white); box-shadow: 0 24px 60px rgba(0,0,0,.25); }
+.focus-modal::backdrop { background: rgba(11,11,12,.6); }
+.focus-modal .num { font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--grey); margin: 0 0 12px; }
+.focus-modal h3 { font-size: 26px; font-weight: 700; letter-spacing: -.01em; line-height: 1.2; margin: 0 0 14px; padding-right: 32px; }
+.focus-modal p:last-child { margin: 0; font-size: 16px; line-height: 1.65; color: var(--ink-2); }
+.focus-close { position: absolute; top: 14px; right: 16px; width: 36px; height: 36px; border: 0; background: transparent; font-size: 28px; line-height: 1; color: var(--ink); cursor: pointer; }
+.focus-close:hover { background: var(--paper); }
+@media (max-width: 560px) { .focus-modal { padding: 28px 22px 24px; } .focus-modal h3 { font-size: 22px; } }
 .source { margin: 16px 0 0; font-size: 12px; color: var(--grey); }
 @media (max-width: 700px) { .themes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .themes { grid-template-columns: 1fr; } }
@@ -172,6 +184,8 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
     radial-gradient(80% 120% at 100% 100%, var(--c), transparent 70%),
     #121214;
 }
+.thumb-green { background: #0A14C8 url("bloomberg-green-card-bg.jpg") center / cover no-repeat; display: grid; place-items: center; }
+.thumb-green img { width: 62%; max-width: 360px; height: auto; }
 .thumb .label { position: absolute; left: 14px; bottom: 14px; background: var(--black); color: var(--white); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 6px 10px; }
 .thumb .ext { position: absolute; right: 14px; top: 14px; background: rgba(255,255,255,.92); color: var(--ink); font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 5px 9px; }
 .card-body { padding: 20px 20px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }

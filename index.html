@@ -67,7 +67,7 @@
        Text from the bloomberg.org press release "COP31 Presidency and Bloomberg
        Philanthropies Announce Partnership to Advance Climate Action Ahead of COP31
        in Antalya" (24 June 2026), as supplied by the client team.
-       Cards 01 and 04 are shortened versions of the original text. -->
+       Card text opens in a modal (#focus-modal); full original text is used. -->
   <section class="section paper" aria-labelledby="themes-title">
     <div class="container">
       <div class="section-head">
@@ -76,36 +76,42 @@
         <p class="lead">Bloomberg Philanthropies is partnering with the COP31 Presidency to advance climate action ahead of and during COP31 in Antalya, with <strong>six areas of focus.</strong></p>
       </div>
       <div class="themes">
-        <article class="theme" style="--c:var(--orange)">
-          <p class="num">Convening</p>
-          <h3>Convene business and finance at COP31</h3>
-          <p>Building on engagement at previous COPs, Bloomberg Philanthropies will work with the COP31 Presidency and partners to bring together policymakers, investors, financial institutions and industry leaders to help mobilize transition finance, particularly across emerging markets, complementing the Presidency’s Climate Implementation Bridge (CIB).</p>
-        </article>
-        <article class="theme" style="--c:var(--yellow)">
-          <p class="num">Energy</p>
-          <h3>Accelerate the Clean Energy Transition</h3>
-          <p>The partnership will support COP31 priorities focused on renewable energy deployment and electrification. Through partnerships, convenings, and data-driven analysis, Bloomberg Philanthropies will help strengthen the clean energy industry’s ability to attract investment, inform energy planning and policy decisions, and accelerate implementation in support of a just energy transition.</p>
-        </article>
-        <article class="theme" style="--c:var(--green)">
-          <p class="num">Methane</p>
-          <h3>Reduce Methane Emissions</h3>
-          <p>Bloomberg Philanthropies will support efforts to reduce methane emissions from urban waste systems and across sectors by strengthening emissions detection and monitoring, expanding access to real-time data, supporting rapid response to super-emitter events, and engaging governments and industry to accelerate mitigation.</p>
-        </article>
-        <article class="theme" style="--c:var(--teal)">
-          <p class="num">Finance</p>
-          <h3>Mobilize Private Finance</h3>
-          <p>Alongside GFANZ and the Global Capacity Building Coalition, Bloomberg Philanthropies will convene leaders from business, finance and government to scale investment in clean energy, industry and infrastructure, building capacity in emerging markets and supporting country platforms like the Türkiye Industrial Decarbonization Investment Platform (TIDIP).</p>
-        </article>
-        <article class="theme" style="--c:var(--orange)">
-          <p class="num">Partnerships</p>
-          <h3>Strengthen Multilevel Partnerships</h3>
-          <p>Bloomberg Philanthropies will support collaboration between national and subnational governments through the Coalition for High Ambition Multilevel Partnerships (CHAMP) for Climate Action, helping integrate climate-resilient and sustainable cities and urban waste solutions into broader climate and economic priorities.</p>
-        </article>
-        <article class="theme" style="--c:var(--teal)">
-          <p class="num">Ocean</p>
-          <h3>Support Ocean-Climate Efforts</h3>
-          <p>Bloomberg Philanthropies will convene partners and elevate the Ocean Pavilion as a platform for science-based ocean-climate solutions, helping make COP31 a milestone for integrating ocean priorities into climate implementation. Priorities will include ocean governance, Blue NDCs, ocean-climate finance, marine protection and resilience, offshore renewable energy, and clean shipping.</p>
-        </article>
+        <button type="button" class="theme" style="--c:var(--orange)" data-focus="focus-1" aria-haspopup="dialog">
+          <span class="num">Convening</span>
+          <span class="theme-title">Convene business and finance at COP31</span>
+          <span class="theme-more">Read more <span aria-hidden="true">+</span></span>
+          <template id="focus-1"><p class="num">Convening</p><h3>Convene business and finance at COP31</h3><p>Building on successful engagement at previous COPs, Bloomberg Philanthropies will work with the COP31 Presidency and partners to bring together policymakers, investors, financial institutions, and industry leaders to strengthen collaboration and help mobilize transition finance in support of COP31 priorities, particularly across emerging markets and developing economies. This will complement the COP31 Presidency’s efforts to establish and operationalize the Climate Implementation Bridge (CIB), which seeks to connect climate ambition with implementation by mobilizing investment, advancing practical solutions, and fostering collaboration across sectors and stakeholders.</p></template>
+        </button>
+        <button type="button" class="theme" style="--c:var(--yellow)" data-focus="focus-2" aria-haspopup="dialog">
+          <span class="num">Energy</span>
+          <span class="theme-title">Accelerate the Clean Energy Transition</span>
+          <span class="theme-more">Read more <span aria-hidden="true">+</span></span>
+          <template id="focus-2"><p class="num">Energy</p><h3>Accelerate the Clean Energy Transition</h3><p>The partnership will support COP31 priorities focused on renewable energy deployment and electrification. Through partnerships, convenings, and data-driven analysis, Bloomberg Philanthropies will help strengthen the clean energy industry’s ability to attract investment, inform energy planning and policy decisions, and accelerate implementation in support of a just energy transition.</p></template>
+        </button>
+        <button type="button" class="theme" style="--c:var(--green)" data-focus="focus-3" aria-haspopup="dialog">
+          <span class="num">Methane</span>
+          <span class="theme-title">Reduce Methane Emissions</span>
+          <span class="theme-more">Read more <span aria-hidden="true">+</span></span>
+          <template id="focus-3"><p class="num">Methane</p><h3>Reduce Methane Emissions</h3><p>Bloomberg Philanthropies will support efforts to reduce methane emissions from urban waste systems and across sectors by strengthening emissions detection and monitoring, expanding access to real-time data, supporting rapid response to super-emitter events, and engaging governments and industry to accelerate mitigation.</p></template>
+        </button>
+        <button type="button" class="theme" style="--c:var(--teal)" data-focus="focus-4" aria-haspopup="dialog">
+          <span class="num">Finance</span>
+          <span class="theme-title">Mobilize Private Finance</span>
+          <span class="theme-more">Read more <span aria-hidden="true">+</span></span>
+          <template id="focus-4"><p class="num">Finance</p><h3>Mobilize Private Finance</h3><p>In support of the COP31 Presidency’s efforts, Bloomberg Philanthropies – alongside the Glasgow Financial Alliance for Net Zero (GFANZ) and the Global Capacity Building Coalition (GCBC) – will convene leaders from business, finance, and government to help scale investment in clean energy, industry, and infrastructure. These efforts will focus on strengthening enabling environments, advancing industrial decarbonization, building capacity in emerging markets, and increasing investment opportunities in climate transition and resilience, including through country platforms like the Türkiye Industrial Decarbonization Investment Platform (TIDIP).</p></template>
+        </button>
+        <button type="button" class="theme" style="--c:var(--orange)" data-focus="focus-5" aria-haspopup="dialog">
+          <span class="num">Partnerships</span>
+          <span class="theme-title">Strengthen Multilevel Partnerships</span>
+          <span class="theme-more">Read more <span aria-hidden="true">+</span></span>
+          <template id="focus-5"><p class="num">Partnerships</p><h3>Strengthen Multilevel Partnerships</h3><p>Bloomberg Philanthropies will support collaboration between national and subnational governments through the Coalition for High Ambition Multilevel Partnerships (CHAMP) for Climate Action, helping integrate climate-resilient and sustainable cities and urban waste solutions into broader climate and economic priorities.</p></template>
+        </button>
+        <button type="button" class="theme" style="--c:var(--teal)" data-focus="focus-6" aria-haspopup="dialog">
+          <span class="num">Ocean</span>
+          <span class="theme-title">Support Ocean-Climate Efforts</span>
+          <span class="theme-more">Read more <span aria-hidden="true">+</span></span>
+          <template id="focus-6"><p class="num">Ocean</p><h3>Support Ocean-Climate Efforts</h3><p>Bloomberg Philanthropies will convene partners and elevate the Ocean Pavilion as a platform for science-based ocean-climate solutions, helping make COP31 a milestone for integrating ocean priorities into climate implementation. Priorities will include ocean governance, Blue NDCs, ocean-climate finance, marine protection and resilience, offshore renewable energy, and clean shipping.</p></template>
+        </button>
       </div>
     </div>
   </section>
@@ -119,11 +125,11 @@
       </div>
       <div class="cards">
       <a class="card" href="https://events.bloomberglive.com/event/green-cop-31/summary?RefId=web-tile" target="_blank" rel="noopener" style="--c:var(--green)">
-        <div class="thumb"><span class="ext">events.bloomberglive.com ↗</span><span class="label">Bloomberg Green</span></div>
+        <div class="thumb thumb-green"><img src="assets/bloomberg-green-cop31-logo.png" alt="Bloomberg Green at COP31"></div>
         <div class="card-body">
           <h3>Bloomberg Green at COP31</h3>
           <p>Now in its sixth year at COP, Bloomberg Green convenes global leaders across finance, industry and policy to tackle the defining challenges of the energy transition.</p>
-          <div class="chips"><span class="chip">11–12 Nov</span><span class="chip">Mainstage</span><span class="chip">Separate registration</span></div>
+          <div class="chips"><span class="chip">11–12 Nov</span><span class="chip">Mainstage</span></div>
           <span class="more">Request to attend <span class="arr" aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></span>
         </div>
       </a>
@@ -368,5 +374,28 @@
   </div>
 </footer>
 
+
+<dialog class="focus-modal" id="focus-modal" aria-labelledby="focus-modal-title">
+  <button type="button" class="focus-close" aria-label="Close">×</button>
+  <div class="focus-content"></div>
+</dialog>
+<script>
+(function () {
+  var dlg = document.getElementById('focus-modal');
+  if (!dlg || !dlg.showModal) return;
+  var content = dlg.querySelector('.focus-content');
+  document.querySelectorAll('[data-focus]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var tpl = document.getElementById(btn.getAttribute('data-focus'));
+      content.innerHTML = tpl.innerHTML;
+      var h = content.querySelector('h3'); if (h) h.id = 'focus-modal-title';
+      dlg.style.setProperty('--c', getComputedStyle(btn).getPropertyValue('--c'));
+      dlg.showModal();
+    });
+  });
+  dlg.querySelector('.focus-close').addEventListener('click', function () { dlg.close(); });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+})();
+</script>
 </body>
 </html>
