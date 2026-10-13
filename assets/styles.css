@@ -230,8 +230,8 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 .speaker .photo { aspect-ratio: 1; background: var(--paper-2); display: grid; place-items: center; margin-bottom: 12px; position: relative; overflow: hidden; }
 .speaker .photo::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; background: var(--c); }
 .speaker .photo svg { width: 46%; height: auto; color: #C9C9C4; }
-.speaker h3 { font-size: 15px; font-weight: 700; margin-bottom: 2px; }
-.speaker p { margin: 0 0 8px; font-size: 13px; color: var(--grey); line-height: 1.35; }
+.speaker h3 { font-size: 17px; font-weight: 700; margin-bottom: 2px; }
+.speaker p { margin: 0 0 8px; font-size: 15px; color: var(--grey); line-height: 1.35; }
 .speaker .tag { display: inline-block; white-space: normal; }
 
 /* ---------- Venue ---------- */
