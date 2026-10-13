@@ -215,7 +215,7 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 .slot .what span { font-size: 14px; color: var(--grey); }
 .tag { font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 4px 8px; white-space: nowrap; background: color-mix(in srgb, var(--c) 18%, white); color: var(--t, var(--ink)); }
 @media (max-width: 760px) {
-  #programme { padding-top: 44px; padding-bottom: 44px; }
+  #programme { padding-top: 31px; padding-bottom: 31px; }
   #programme .section-head { margin-bottom: 20px; }
   .days { gap: 18px; }
   .day { grid-template-columns: 1fr; gap: 4px; padding-top: 10px; }
@@ -341,3 +341,15 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
 @media (max-width: 600px) { .hero-logo { display: none; } }
 @media (max-width: 600px) { .hide-mobile { display: none; } }
 @media (max-width: 600px) { .hero .sub-sep { display: none; } .hero .sub-date { display: block; margin-top: 4px; } }
+/* section-mobile-spacing */
+@media (max-width: 600px) { .section { padding-top: 39px; padding-bottom: 39px; } #programme { padding-top: 31px; padding-bottom: 31px; } }
+/* h2-mobile-size */
+@media (max-width: 600px) { .h2 { font-size: 18.9px; } .about .h2, .venue .h2 { font-size: 17.6px; } }
+/* theme-mobile-compact */
+@media (max-width: 600px) {
+  .theme { position: relative; min-height: 0; gap: 4px; padding: 14px 52px 14px 16px; border-top-width: 3px; }
+  .theme .num { font-size: 10px; }
+  .theme-title { font-size: 16px; line-height: 1.25; }
+  .theme-more { position: absolute; top: 50%; right: 14px; transform: translateY(-50%); margin: 0; width: 28px; height: 28px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; font-size: 0; }
+  .theme-more span { font-size: 18px; line-height: 1; }
+}
