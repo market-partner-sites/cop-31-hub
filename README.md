@@ -1,6 +1,6 @@
 # Bloomberg at COP31 microsite: draft v3 (dummy content)
 
-The style follows Bloomberg's event pages (for example, Bloomberg at New York Climate Week 2026): a black top bar, a dark hero, headings in the BBGAvenir style, joined theme cards, event cards with thumbnails, and a black footer. The accent colours come from the COP31 lanyard slide. No artwork is used.
+The style follows Bloomberg's event pages (for example, Bloomberg at New York Climate Week 2026): a black top bar, a dark hero, type set in Avenir Next P for BBG, joined theme cards, event cards with thumbnails, and a black footer. The accent colours come from the COP31 lanyard slide. No artwork is used.
 
 ## Pages
 - `index.html`: the landing page, with sections for hero, themes, events, programme, speakers, venue and about.
@@ -13,7 +13,7 @@ The style follows Bloomberg's event pages (for example, Bloomberg at New York Cl
 ## Before go-live
 1. **Dummy content.** Replace the themes, card copy, Finance Summit times, roundtable topics, speakers (placeholder silhouettes), venue contact and about copy.
 2. **Hero and card visuals** use a dot-grid and colour-glow placeholder (`.hero-media`, `.thumb`). Swap in approved photography.
-3. **Font.** The stack is BBGAvenir first, then Figtree (Google Fonts) as the open fallback. Load BBGAvenir if Bloomberg's licence covers this site.
+3. **Font.** The site uses **Avenir Next P for BBG**. Add the web font files to `assets/fonts/` as `AvenirNextPForBBG-Regular`, `-Medium`, `-Demi` and `-Bold` (`.woff2`, with `.woff` optional). Until they're added, browsers use the font if it's installed locally, and otherwise fall back to Figtree. Check that Bloomberg's licence covers web use before you publish the files on a public site.
 4. **Forms.** Set each `<form action="#">` to its real endpoint. While it stays `#`, submitting the form only shows the confirmation message.
    - A hidden field `event` identifies which form was submitted.
    - Field names: `first_name`, `last_name`, `job_title`, `organisation`, `email`, `phone`, `country`, `sector`, `badge`, `dietary`, `accessibility`, `privacy_consent`, `marketing_opt_in`.
