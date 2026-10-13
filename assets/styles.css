@@ -139,7 +139,7 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 .hero-inner { max-width: 620px; }
 .hero .eyebrow { color: var(--yellow); font-size: 13px; margin-bottom: 16px; }
 .hero h1 { color: var(--white); font-size: clamp(40px, 6.2vw, 68px); font-weight: 600; letter-spacing: -.02em; line-height: 1.14; margin-bottom: 24px; }
-.hero .sub { font-size: clamp(16px, 1.7vw, 19px); font-weight: 700; margin: 0 0 10px; }
+.hero .sub { font-size: clamp(15px, 1.5vw, 17px); font-weight: 700; margin: 0 0 10px; }
 .hero p { margin: 0 0 14px; color: rgba(255,255,255,.94); }
 .rule { width: 40px; height: 3px; background: var(--yellow); margin: 24px 0; border: 0; }
 .hero-logo { height: 64px; width: auto; margin-bottom: 28px; }
