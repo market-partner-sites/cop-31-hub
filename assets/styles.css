@@ -8,28 +8,28 @@
    Put the web font files in assets/fonts/ using the filenames below.
    local() picks the font up on machines where it is already installed. */
 @font-face {
-  font-family: "Avenir Next P for BBG";
+  font-family: "AvenirNextPForBBG";
   src: local("Avenir Next P for BBG"), local("AvenirNextPForBBG-Regular"),
        url("fonts/AvenirNextPForBBG-Regular.woff2") format("woff2"),
        url("fonts/AvenirNextPForBBG-Regular.woff") format("woff");
   font-weight: 400; font-style: normal; font-display: swap;
 }
 @font-face {
-  font-family: "Avenir Next P for BBG";
+  font-family: "AvenirNextPForBBG";
   src: local("Avenir Next P for BBG Medium"), local("AvenirNextPForBBG-Medium"),
        url("fonts/AvenirNextPForBBG-Medium.woff2") format("woff2"),
        url("fonts/AvenirNextPForBBG-Medium.woff") format("woff");
   font-weight: 500; font-style: normal; font-display: swap;
 }
 @font-face {
-  font-family: "Avenir Next P for BBG";
+  font-family: "AvenirNextPForBBG";
   src: local("Avenir Next P for BBG Demi"), local("AvenirNextPForBBG-Demi"),
        url("fonts/AvenirNextPForBBG-Demi.woff2") format("woff2"),
        url("fonts/AvenirNextPForBBG-Demi.woff") format("woff");
   font-weight: 600; font-style: normal; font-display: swap;
 }
 @font-face {
-  font-family: "Avenir Next P for BBG";
+  font-family: "AvenirNextPForBBG";
   src: local("Avenir Next P for BBG Bold"), local("AvenirNextPForBBG-Bold"),
        url("fonts/AvenirNextPForBBG-Bold.woff2") format("woff2"),
        url("fonts/AvenirNextPForBBG-Bold.woff") format("woff");
@@ -65,8 +65,8 @@
   --gutter: clamp(16px, 4vw, 32px);
   --radius: 2px;
 
-  /* Avenir Next P for BBG is the brand face; Figtree is a fallback until the font files are added. */
-  --font: "Avenir Next P for BBG", "AvenirNextPForBBG-Regular", "Figtree", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Same stack as Bloomberg event pages (e.g. Climate Week 2026): Avenir Next P for BBG, then Helvetica Neue. */
+  --font: "AvenirNextPForBBG", "Avenir Next P for BBG", BBGAvenir, "Helvetica Neue", Helvetica, Arial, -apple-system, system-ui, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

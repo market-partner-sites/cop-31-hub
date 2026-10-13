@@ -13,7 +13,7 @@ The style follows Bloomberg's event pages (for example, Bloomberg at New York Cl
 ## Before go-live
 1. **Dummy content.** Replace the themes, card copy, Finance Summit times, roundtable topics, speakers (placeholder silhouettes), venue contact and about copy.
 2. **Hero and card visuals** use a dot-grid and colour-glow placeholder (`.hero-media`, `.thumb`). Swap in approved photography.
-3. **Font.** The site uses **Avenir Next P for BBG**. Add the web font files to `assets/fonts/` as `AvenirNextPForBBG-Regular`, `-Medium`, `-Demi` and `-Bold` (`.woff2`, with `.woff` optional). Until they're added, browsers use the font if it's installed locally, and otherwise fall back to Figtree. Check that Bloomberg's licence covers web use before you publish the files on a public site.
+3. **Font.** Same type stack as Bloomberg's event pages: `AvenirNextPForBBG` (Avenir Next P for BBG), falling back to Helvetica Neue. Add the licensed web font files to `assets/fonts/` as `AvenirNextPForBBG-Regular`, `-Medium`, `-Demi` and `-Bold` (`.woff2`/`.woff`). Until then, browsers use the font if it's installed locally and otherwise Helvetica Neue. Check that Bloomberg's licence covers web use before publishing the files on a public site.
 4. **Forms.** Set each `<form action="#">` to its real endpoint. While it stays `#`, submitting the form only shows the confirmation message.
    - A hidden field `event` identifies which form was submitted.
    - Field names: `first_name`, `last_name`, `job_title`, `organisation`, `email`, `phone`, `country`, `sector`, `badge`, `dietary`, `accessibility`, `privacy_consent`, `marketing_opt_in`.
