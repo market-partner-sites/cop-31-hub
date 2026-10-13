@@ -322,3 +322,5 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
 .intro-single p { max-width: 943px; margin: 0 0 16px; color: var(--ink-2); font-size: 18px; line-height: 1.6; }
 
 .hero .sub-sep { display: inline-block; width: 1.5px; height: .9em; margin: 0 14px; background: var(--yellow); vertical-align: -0.08em; opacity: .9; }
+
+@media (max-width: 600px) { .hero-logo { display: none; } }
