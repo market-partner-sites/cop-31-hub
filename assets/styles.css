@@ -161,7 +161,6 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 /* ---------- Themes (joined cards) ---------- */
 .themes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
 .theme { background: var(--white); padding: 22px 22px 20px; border: 0; border-top: 4px solid var(--c); font: inherit; color: inherit; text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 10px; min-height: 168px; transition: background .15s; }
-.theme:hover { background: var(--paper); }
 .theme:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
 .theme .num { display: block; font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--grey); margin: 0; }
 .theme-title { display: block; font-size: 20px; font-weight: 700; letter-spacing: -.01em; line-height: 1.2; color: var(--ink); }
@@ -377,3 +376,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
 .reg-single .embed-form { max-width: 680px; }
 /* the embedded form has ~38px of internal left padding; pull it back so it lines up with the heading */
 .embed-form iframe { margin-left: -38px; width: calc(100% + 38px) !important; margin-top: -40px; }
+/* footer-fill: black below the footer on short pages and when overscrolling */
+html { background: var(--black); }
+body { background: var(--white); }
+.footer { padding-bottom: max(36px, env(safe-area-inset-bottom)); }
