@@ -192,6 +192,8 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 }
 .thumb-green { background: #0A14C8 url("bloomberg-green-card-bg.jpg") center / cover no-repeat; display: grid; align-items: center; justify-items: start; padding-left: 28px; }
 .thumb-green img { width: 62%; max-width: 360px; height: auto; }
+.thumb-logo { display: grid; align-items: center; justify-items: start; padding-left: 28px; }
+.thumb-logo img { width: 62%; max-width: 360px; height: auto; }
 .thumb .label { position: absolute; left: 14px; bottom: 14px; background: var(--black); color: var(--white); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 6px 10px; }
 .thumb .ext { position: absolute; right: 14px; top: 14px; background: rgba(255,255,255,.92); color: var(--ink); font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 5px 9px; }
 .card-body { padding: 20px 20px 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
@@ -366,3 +368,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
 @media (max-width: 600px) { .mobile-only { display: block !important; } .desktop-only { display: none !important; } }
 /* theme-mobile-gaps */
 @media (max-width: 600px) { .themes { gap: 10px; background: transparent; border: 0; } .theme { border: 1px solid var(--line); border-top: 2px solid var(--c); } }
+/* embedded registration form */
+.embed-title { font-size: 26px; font-weight: 700; letter-spacing: -.01em; margin: 0 0 18px; }
+.embed-form { min-height: 400px; }
+.embed-form iframe { width: 100%; border: 0; display: block; }
