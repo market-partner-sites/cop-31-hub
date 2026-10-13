@@ -137,7 +137,7 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 .hero .container { position: relative; z-index: 1; padding-top: clamp(36px, 4.2vw, 53px); padding-bottom: clamp(72px, 8vw, 100px); }
 .hero-inner { max-width: 620px; }
 .hero .eyebrow { color: var(--yellow); font-size: 13px; margin-bottom: 16px; }
-.hero h1 { color: var(--white); font-size: clamp(40px, 6.2vw, 68px); font-weight: 600; letter-spacing: -.02em; line-height: 1.04; margin-bottom: 24px; }
+.hero h1 { color: var(--white); font-size: clamp(40px, 6.2vw, 68px); font-weight: 600; letter-spacing: -.02em; line-height: 1.14; margin-bottom: 24px; }
 .hero .sub { font-size: clamp(16px, 1.7vw, 19px); font-weight: 700; margin: 0 0 10px; }
 .hero p { margin: 0 0 14px; color: rgba(255,255,255,.94); }
 .rule { width: 40px; height: 3px; background: var(--yellow); margin: 24px 0; border: 0; }
@@ -189,7 +189,7 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
     radial-gradient(80% 120% at 100% 100%, var(--c), transparent 70%),
     #121214;
 }
-.thumb-green { background: #0A14C8 url("bloomberg-green-card-bg.jpg") center / cover no-repeat; display: grid; place-items: center; }
+.thumb-green { background: #0A14C8 url("bloomberg-green-card-bg.jpg") center / cover no-repeat; display: grid; align-items: center; justify-items: start; padding-left: 12px; }
 .thumb-green img { width: 62%; max-width: 360px; height: auto; }
 .thumb .label { position: absolute; left: 14px; bottom: 14px; background: var(--black); color: var(--white); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; padding: 6px 10px; }
 .thumb .ext { position: absolute; right: 14px; top: 14px; background: rgba(255,255,255,.92); color: var(--ink); font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; padding: 5px 9px; }
