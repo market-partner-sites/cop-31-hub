@@ -357,3 +357,12 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
 @media (max-width: 600px) { .slot .tag { display: none; } .slot { grid-template-columns: 1fr; grid-template-areas: "time" "what"; } }
 /* theme-mobile-v2 */
 @media (max-width: 600px) { .theme .num { display: none; } .theme { padding-top: 11px; padding-bottom: 11px; justify-content: center; } }
+/* hero-btn-mobile */
+@media (max-width: 600px) { .hero .actions { gap: 10px; flex-wrap: nowrap; } .hero .actions .btn { padding: 11px 16px; font-size: 13px; white-space: nowrap; } }
+/* hero-eyebrow-mobile */
+@media (max-width: 600px) { .hero .eyebrow { display: none; } }
+/* mobile-only copy */
+.mobile-only { display: none; }
+@media (max-width: 600px) { .mobile-only { display: block; } .desktop-only { display: none; } }
+/* theme-mobile-gaps */
+@media (max-width: 600px) { .themes { gap: 10px; background: transparent; border: 0; } .theme { border: 1px solid var(--line); border-top: 3px solid var(--c); } }
