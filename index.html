@@ -18,7 +18,10 @@
     <a class="brand" href="index.html" aria-label="Bloomberg at COP31 home">
       <img src="assets/bloomberg-lockup-white.png" alt="Bloomberg | Bloomberg Philanthropies">
     </a>
-    <nav class="menu" aria-label="Main">
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="menu" id="site-menu" aria-label="Main">
       <a href="#events">Events</a>
       <a href="#programme">Programme</a>
       <a href="#speakers">Speakers</a>
@@ -36,9 +39,9 @@
     <div class="container">
       <div class="hero-inner">
         <img class="hero-logo" src="assets/cop31-logo-white.png" alt="COP31 Türkiye Antalya">
-        <p class="eyebrow">Bloomberg at COP31 · Antalya, Türkiye</p>
+        <p class="eyebrow">Bloomberg at COP31<span class="hide-mobile"> · Antalya, Türkiye</span></p>
         <h1 id="hero-title">Bloomberg Hub<br> events at COP31</h1>
-        <p class="sub">Kempinski The Dome, Belek<span class="sub-sep" aria-hidden="true"></span><span class="visually-hidden">, </span>10–13 November 2026</p>
+        <p class="sub">Kempinski The Dome, Belek<span class="sub-sep" aria-hidden="true"></span><span class="visually-hidden">, </span><span class="sub-date">10–13 November 2026</span></p>
         <hr class="rule">
         <div class="actions">
           <a class="btn btn-accent" href="#events">Explore events <span class="arr" aria-hidden="true">→</span></a>
@@ -300,9 +303,6 @@
       <div>
         <p>Bloomberg provides market-leading financial data, news, analytics and research that help investors, corporations, governments and financial institutions make more informed decisions.</p>
         <p>Our Sustainable Finance capabilities combine trusted market intelligence with sustainability, climate and transition insights to support investment, risk management and strategic decision-making across global markets.</p>
-        <div class="actions" style="margin-top:22px">
-          <a class="btn btn-dark" href="https://www.bloomberg.com/green" target="_blank" rel="noopener">Bloomberg Green <span class="arr" aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
-        </div>
       </div>
     </div>
   </section>
@@ -380,5 +380,6 @@
   dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
 })();
 </script>
+<script src="assets/nav.js"></script>
 </body>
 </html>

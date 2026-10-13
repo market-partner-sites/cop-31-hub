@@ -18,7 +18,10 @@
     <a class="brand" href="index.html" aria-label="Bloomberg at COP31 home">
       <img src="assets/bloomberg-lockup-white.png" alt="Bloomberg | Bloomberg Philanthropies">
     </a>
-    <nav class="menu" aria-label="Main">
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="menu" id="site-menu" aria-label="Main">
       <a href="index.html#events">Events</a>
       <a href="index.html#programme">Programme</a>
       <a href="index.html#speakers">Speakers</a>
@@ -149,5 +152,6 @@
 </footer>
 
 <script src="assets/register.js"></script>
+<script src="assets/nav.js"></script>
 </body>
 </html>
