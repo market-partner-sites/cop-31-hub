@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roundtables &amp; Breakouts | Bloomberg at COP31</title>
+  <meta name="description" content="Register for Roundtables &amp; Breakouts at Bloomberg at COP31, Antalya, Türkiye.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topnav">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Bloomberg at COP31 home">
+      <img src="assets/bloomberg-lockup-white.png" alt="Bloomberg | Bloomberg Philanthropies">
+      <span class="sep" aria-hidden="true"></span>
+      <span class="event">COP31 Antalya 2026</span>
+    </a>
+    <nav class="menu" aria-label="Main">
+      <a href="index.html#events">Events</a>
+      <a href="index.html#programme">Programme</a>
+      <a href="index.html#speakers">Speakers</a>
+      <a href="index.html#venue">Venue</a>
+      <a class="btn btn-accent btn-sm" href="index.html#events">Register</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="page-hero" style="--c:#5CC8DE">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="container">
+      <a class="crumb" href="index.html#events">← All events</a>
+      <p class="eyebrow">Bloomberg at COP31 · Antalya</p>
+      <h1>Roundtables &amp; Breakouts</h1>
+      <p>Closed-door discussions for senior leaders on finance, energy and resilience, held in small boardroom settings.</p>
+    </div>
+  </section>
+  <div class="band" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+  <section class="section">
+    <div class="container reg">
+      <div>
+        <!-- DEVELOPER: set action/method to the registration endpoint.
+             While action="#", submitting only shows the confirmation (preview). -->
+        <form action="#" method="post" novalidate data-reg-form>
+          <input type="hidden" name="event" value="roundtables">
+          <h2>Request an invitation</h2>
+          <p>Fields marked <span class="req">*</span> are required.</p>
+
+          <fieldset>
+            <legend>Which roundtables interest you?</legend>
+            <div class="checks" data-require-one>
+              <p class="hint" style="margin:0 0 4px">Select all that apply.</p>
+              <label class="check option"><input type="checkbox" name="roundtable_interest" value="rt-finance"><span><strong>Unlocking Private Capital for Emerging Markets</strong><span class="sub">Thursday 12 November · Afternoon</span></span></label>
+              <label class="check option"><input type="checkbox" name="roundtable_interest" value="rt-grids"><span><strong>Grids, Storage and Energy Security</strong><span class="sub">Thursday 12 November · Afternoon</span></span></label>
+              <label class="check option"><input type="checkbox" name="roundtable_interest" value="rt-adaptation"><span><strong>Financing Adaptation and Resilience</strong><span class="sub">Friday 13 November · Morning</span></span></label>
+              <label class="check option"><input type="checkbox" name="roundtable_interest" value="rt-carbon"><span><strong>The Future of Carbon Markets</strong><span class="sub">Friday 13 November · Afternoon</span></span></label>
+              <span class="error-msg">Please choose at least one option.</span>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Your details</legend>
+            <div class="grid-2">
+              <div class="field"><label for="first_name">First name<span class="req" aria-hidden="true">*</span></label><input id="first_name" name="first_name" type="text" autocomplete="given-name" required><span class="error-msg">Please enter your first name.</span></div>
+              <div class="field"><label for="last_name">Last name<span class="req" aria-hidden="true">*</span></label><input id="last_name" name="last_name" type="text" autocomplete="family-name" required><span class="error-msg">Please enter your last name.</span></div>
+              <div class="field"><label for="job_title">Job title<span class="req" aria-hidden="true">*</span></label><input id="job_title" name="job_title" type="text" autocomplete="organization-title" required><span class="error-msg">Please enter your job title.</span></div>
+              <div class="field"><label for="organisation">Organisation<span class="req" aria-hidden="true">*</span></label><input id="organisation" name="organisation" type="text" autocomplete="organization" required><span class="error-msg">Please enter your organisation.</span></div>
+              <div class="field"><label for="email">Work email<span class="req" aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required><span class="error-msg">Please enter a valid email address.</span></div>
+              <div class="field"><label for="phone">Mobile <span class="hint">(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+              <div class="field"><label for="country">Country<span class="req" aria-hidden="true">*</span></label><!-- DEVELOPER: swap for a full country list --><input id="country" name="country" type="text" autocomplete="country-name" required><span class="error-msg">Please enter your country.</span></div>
+              <div class="field"><label for="sector">Sector<span class="req" aria-hidden="true">*</span></label>
+                <select id="sector" name="sector" required>
+                  <option value="">Please select</option><option>Financial services</option><option>Government / public sector</option><option>Multilateral / international organisation</option><option>Corporate / industry</option><option>NGO / civil society</option><option>Academia / research</option><option>Media</option><option>Other</option>
+                </select><span class="error-msg">Please select a sector.</span></div>
+              <div class="field full"><label for="badge">Do you hold a COP31 Blue Zone badge?</label>
+                <select id="badge" name="badge"><option value="">Please select</option><option>Yes, Party delegate</option><option>Yes, Observer</option><option>Yes, Press</option><option>No</option></select></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional requirements</legend>
+            <div class="grid-2">
+              <div class="field full"><label for="dietary">Dietary requirements <span class="hint">(optional)</span></label><input id="dietary" name="dietary" type="text"></div>
+              <div class="field full"><label for="accessibility">Accessibility requirements <span class="hint">(optional)</span></label><textarea id="accessibility" name="accessibility"></textarea></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Privacy</legend>
+            <div class="checks">
+              <label class="check"><input type="checkbox" name="privacy_consent" value="yes" required><span>I agree to my information being processed in line with the <a href="https://www.bloomberg.com/notices/privacy/" target="_blank" rel="noopener">Bloomberg Privacy Policy</a> for the purposes of this event.<span class="req" aria-hidden="true">*</span></span></label>
+              <label class="check"><input type="checkbox" name="marketing_opt_in" value="yes"><span>I would like to receive information about future Bloomberg events.</span></label>
+              <span class="error-msg">Please accept the privacy terms to continue.</span>
+            </div>
+          </fieldset>
+
+          <div class="submit-row">
+            <p>You'll receive an email confirming your registration status.</p>
+            <button class="btn btn-dark" type="submit">Submit request <span class="arr" aria-hidden="true">→</span></button>
+          </div>
+        </form>
+        <div class="confirmation" role="status" aria-live="polite">
+          <h2>Thank you</h2>
+          <p>We've received your request. The Bloomberg team will be in touch if a place is available.</p>
+          <a class="btn btn-outline" href="index.html#events">Back to all events</a>
+        </div>
+      </div>
+      <aside style="--c:var(--teal)">
+        <div class="details" style="--c:var(--teal)">
+          <p class="eyebrow">Event details</p>
+          <dl>
+            <div><dt>Dates</dt><dd>12–13 November 2026</dd></div>
+            <div><dt>Location</dt><dd>Divan boardrooms<br>Kempinski The Dome, Belek</dd></div>
+            <div><dt>Format</dt><dd>By invitation, up to 36 seats</dd></div>
+          </dl>
+          <p class="note">Requests are reviewed by the Bloomberg team. Submitting a request does not guarantee a place.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<div class="band" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-logos">
+        <img class="bb" src="assets/bloomberg-lockup-white.png" alt="Bloomberg | Bloomberg Philanthropies">
+        <span class="sep" aria-hidden="true"></span>
+        <img class="cop" src="assets/cop31-logo-white.png" alt="COP31 Türkiye Antalya">
+      </div>
+      <p class="tagline">Bloomberg connects decision makers to a dynamic network of information, people and ideas.</p>
+    </div>
+    <div class="footer-legal">
+      <span>© 2026 Bloomberg Finance L.P. All rights reserved.</span>
+      <ul>
+        <li><a href="https://www.bloomberg.com/notices/privacy/">Privacy</a></li>
+        <li><a href="https://www.bloomberg.com/notices/tos/">Terms</a></li>
+        <li><a href="https://www.bloomberg.com/notices/event-code-of-conduct/">Event Terms</a></li>
+        <li><a href="https://www.bloomberg.com/company/">Company</a></li>
+        <li><a href="https://www.bloomberg.com/company/press/">Press</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/register.js"></script>
+</body>
+</html>
