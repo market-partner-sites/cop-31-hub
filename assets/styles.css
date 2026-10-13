@@ -353,3 +353,7 @@ input:focus, select:focus, textarea:focus { outline: none; border-color: var(--i
   .theme-more { position: absolute; top: 50%; right: 14px; transform: translateY(-50%); margin: 0; width: 28px; height: 28px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; font-size: 0; }
   .theme-more span { font-size: 18px; line-height: 1; }
 }
+/* slot-tags-mobile */
+@media (max-width: 600px) { .slot .tag { display: none; } .slot { grid-template-columns: 1fr; grid-template-areas: "time" "what"; } }
+/* theme-mobile-v2 */
+@media (max-width: 600px) { .theme .num { display: none; } .theme { padding-top: 11px; padding-bottom: 11px; justify-content: center; } }
