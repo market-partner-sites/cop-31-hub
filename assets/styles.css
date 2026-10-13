@@ -134,7 +134,7 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
     #0E2A33;
 }
 .hero-media::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,11,12,.72) 0%, rgba(11,11,12,.42) 45%, rgba(11,11,12,0) 100%); }
-.hero .container { position: relative; z-index: 1; padding-top: clamp(36px, 4.2vw, 53px); padding-bottom: clamp(36px, 4.2vw, 53px); }
+.hero .container { position: relative; z-index: 1; padding-top: clamp(36px, 4.2vw, 53px); padding-bottom: clamp(56px, 6.2vw, 77px); }
 .hero-inner { max-width: 620px; }
 .hero .eyebrow { color: var(--yellow); font-size: 13px; margin-bottom: 16px; }
 .hero h1 { color: var(--white); font-size: clamp(40px, 6.2vw, 68px); font-weight: 600; letter-spacing: -.02em; line-height: 1.04; margin-bottom: 24px; }
@@ -148,7 +148,12 @@ h1, h2, h3 { margin: 0; color: var(--ink); }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; }
 
 /* Lanyard band */
-.band { display: grid; grid-template-columns: repeat(4, 1fr); height: 12px; }
+.band { display: block; height: 12px;
+  background: linear-gradient(90deg, var(--yellow) 0 25%, var(--orange) 25% 50%, var(--teal) 50% 75%, var(--green) 75% 100%) 0 0 / 100vw 100% repeat-x;
+  animation: band-drift 150s linear infinite; }
+.band i { display: none; }
+@keyframes band-drift { from { background-position: 0 0; } to { background-position: 100vw 0; } }
+@media (prefers-reduced-motion: reduce) { .band { animation: none; } }
 .band i:nth-child(1) { background: var(--yellow); } .band i:nth-child(2) { background: var(--orange); }
 .band i:nth-child(3) { background: var(--teal); }   .band i:nth-child(4) { background: var(--green); }
 
